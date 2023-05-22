@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Calculator</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <h1>Calculator</h1>
+    <div class="container">
+         
+        
+        <div class="row">
+            <form action="">
+                <div class="">
+                
+                    <input class="textbox" type="text" id="result" name="result" readonly>
+                    <br> <hr>
+                    <input type="button" class="button" value="1" onclick="document.getElementById('result').value +='1'">
+                    <input type="button" class="button" value="2" onclick="document.getElementById('result').value +='2'">
+                    <input type="button" class="button" value="3" onclick="document.getElementById('result').value +='3'">
+                    <input type="button" class="button" value="+" onclick="document.getElementById('result').value +='+'">
+                    <br>
+                    <input type="button" class="button" value="4" onclick="document.getElementById('result').value +='4'">
+                    <input type="button" class="button" value="5" onclick="document.getElementById('result').value +='5'">
+                    <input type="button" class="button" value="6" onclick="document.getElementById('result').value +='6'">
+                    <input type="button" class="button" value="-" onclick="document.getElementById('result').value +='-'">
+                    <br>
+                    <input type="button" class="button" value="7" onclick="document.getElementById('result').value +='7'">
+                    <input type="button" class="button" value="8" onclick="document.getElementById('result').value +='8'">
+                    <input type="button" class="button" value="9" onclick="document.getElementById('result').value +='9'">
+                    <input type="button" class="button" value="*" onclick="document.getElementById('result').value +='*'">
+                    <br>
+                    <input type="button" class="button" value="0" onclick="document.getElementById('result').value +='0'">
+                    <input type="button" class="button" value="." onclick="document.getElementById('result').value +='.'">
+                    <input type="button" class="ibutton" value="C" onclick="document.getElementById('result').value = ''">
+                    <input type="button" class="button" value="/" onclick="document.getElementById('result').value +='/'">
+                    <br>
+                    <input type="button" class="button" value="sin" onclick="document.getElementById('result').value = Math.sin(document.getElementById('result').value)">
+                    <input type="button" class="button" value="cos" onclick="document.getElementById('result').value = Math.cos(document.getElementById('result').value)">
+                    <input type="button" class="button" value="tan" onclick="document.getElementById('result').value = Math.tan(document.getElementById('result').value)">
+                    <input type="button" class="ebutton" value="=" onclick="document.getElementById('result').value = eval(document.getElementById('result').value)">
+                    <input class="dbutton" type="button" value="DEL" onclick="document.getElementById('result').value = document.getElementById('result').value.substr(0,document.getElementById('result').value.length-1)">
+                </div>
+            </div>
+            </form>
+        
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+    Developed by Habib Abdulkareem | 2023
+    <p class="Icons" >
+      <a href="https://web.facebook.com/profile.php?id=100075700733726"><i class="fa-brands fa-facebook icon"></i></a>
+      <a href="https://github.com/Habi12345"><i class="fa-brands fa-github icon"></i></a>
+      <a href="https://www.linkedin.com/in/habib-adavize-92b08526b/"><i class="fa-brands fa-linkedin icon"></i></a>
+    </p>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
